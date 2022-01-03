@@ -1,0 +1,52 @@
+/* global css */
+.btn {
+  border-radius: 6px;
+}
+
+.card {
+  border-radius: 8px;
+}
+
+.card-header {
+  height: 60%;
+  background-color: whitesmoke;
+  border-radius: 8px 8px 0px 0px;
+}
+
+.card-body {
+  border-radius: 0px 0px 8px 8px
+}
+
+.modal {
+  border-radius: 8px;
+}
+
+.modal-header {
+  height: 80%;
+  background-color: whitesmoke;
+  border-radius: 8px 8px 0px 0px;
+}
+
+.modal-footer {
+  border-radius: 0px 0px 8px 8px
+}
+
+.nav-tabs .nav-item .nav-link {
+  border-radius: 8px 8px 0px 0px;
+}
+
+.tab-content {
+  padding: 12px 0px;
+}
+
+/* colors https://htmlcolorcodes.com/color-chart/ - use flat design */
+.spanErrors {
+  color: #EC7063;
+}
+
+/* datatables body styling */
+table.dataTable tbody th, table.dataTable tbody td {
+  padding: 4px 8px;  /* e.g. change 8x to 4px here */
+  table-layout: fixed;
+  word-wrap:break-word;
+}

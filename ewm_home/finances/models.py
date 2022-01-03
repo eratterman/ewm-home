@@ -26,9 +26,13 @@ class BankEntry(models.Model):
 
     class Meta:
         verbose_name = 'Bank Entry'
+        verbose_name_plural = 'Bank Entries'
 
     def __repr__(self):
         return f'<bank data object: {self.display}>'
+
+    def __str__(self):
+        return str(self.display)
 
 
 class FinanceType(models.Model):
@@ -39,9 +43,13 @@ class FinanceType(models.Model):
 
     class Meta:
         verbose_name = 'Finance Type'
+        verbose_name_plural = 'Finance Types'
 
     def __repr__(self):
         return f'<finance type object: {self.finance_type}>'
+
+    def __str__(self):
+        return str(self.finance_type)
 
 
 class Categories(models.Model):
@@ -52,10 +60,14 @@ class Categories(models.Model):
     category = models.CharField(max_length=200)
 
     class Meta:
-        verbose_name = 'Categories'
+        verbose_name = 'Category'
+        verbose_name_plural = 'Categories'
 
     def __repr__(self):
         return f'<category object: {self.category}>'
+
+    def __str__(self):
+        return str(self.category)
 
 
 class Searches(models.Model):
@@ -74,7 +86,11 @@ class Searches(models.Model):
     )
 
     class Meta:
-        verbose_name = 'Searches'
+        verbose_name = 'Search'
+        verbose_name_plural = 'Searches'
 
     def __repr__(self):
         return f'<search object: {self.display}>'
+
+    def __str__(self):
+        return str(self.display)

@@ -16,15 +16,17 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from rest_framework import routers
-from todo import views
+from finances import views
+from todo import views as todo_views
 import finances.urls
 
 
 router = routers.DefaultRouter()
-router.register(r'todos', views.TodoView, 'todo')
+router.register(r'todos', todo_views.TodoView, 'todo')
 
 
 urlpatterns = [
+    path('', views.index, name='home'),
     path('admin/', admin.site.urls),
     path('api/', include(router.urls)),
     path('finances/', include(finances.urls))
