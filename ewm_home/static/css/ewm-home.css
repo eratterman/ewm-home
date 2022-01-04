@@ -49,4 +49,5 @@ table.dataTable tbody th, table.dataTable tbody td {
   padding: 4px 8px;  /* e.g. change 8x to 4px here */
   table-layout: fixed;
   word-wrap:break-word;
+  font-size: 85%;
 }

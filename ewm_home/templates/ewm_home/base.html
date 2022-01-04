@@ -1,42 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+  {% load static %}
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>EWM Home App</title>
-    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+    <link rel="shortcut icon" href="{% static 'img/favicon.ico' %}">
     <!-- Tell the browser to be responsive to screen width -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
     <!-- Font Awesome -->
-    <link href="{{ url_for('static', filename='plugins/fontawesome-free/css/all.min.css') }}" rel="stylesheet">
+    <link href="{%  static 'plugins/fontawesome-free/css/all.min.css' %}" rel="stylesheet">
     <!-- Ionicons -->
     <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
     <!-- Tempusdominus Bbootstrap 4 -->
-    <link href="{{ url_for('static', filename='plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css') }}" rel="stylesheet">
+    <link href="{% static 'plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css' %}" rel="stylesheet">
     <!-- iCheck -->
-    <link href="{{ url_for('static', filename='plugins/icheck-bootstrap/icheck-bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{% static 'plugins/icheck-bootstrap/icheck-bootstrap.min.css' %}" rel="stylesheet">
     <!-- JQVMap -->
-    <link href="{{ url_for('static', filename='plugins/jqvmap/jqvmap.min.css') }}" rel="stylesheet">
+    <link href="{% static 'plugins/jqvmap/jqvmap.min.css' %}" rel="stylesheet">
     <!-- Theme style -->
-    <link href="{{ url_for('static', filename='css/adminlte.min.css') }}" rel="stylesheet">
-    <link href="{{ url_for('static', filename='css/ewm-home.css') }}" rel="stylesheet">
+    <link href="{% static 'css/adminlte.min.css' %}" rel="stylesheet">
+    <link href="{% static 'css/ewm-home.css' %}" rel="stylesheet">
     <!-- overlayScrollbars -->
-    <link href="{{ url_for('static', filename='plugins/overlayScrollbars/css/OverlayScrollbars.min.css') }}" rel="stylesheet">
+    <link href="{% static 'plugins/overlayScrollbars/css/OverlayScrollbars.min.css' %}" rel="stylesheet">
     <!-- Daterange picker -->
-    <link href="{{ url_for('static', filename='plugins/daterangepicker/daterangepicker.css') }}" rel="stylesheet">
+    <link href="{% static 'plugins/daterangepicker/daterangepicker.css' %}" rel="stylesheet">
     <!-- summernote -->
-    <link href="{{ url_for('static', filename='plugins/summernote/summernote-bs4.css') }}" rel="stylesheet">
+    <link href="{% static 'plugins/summernote/summernote-bs4.css' %}" rel="stylesheet">
     <!-- Google Font: Source Sans Pro -->
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap" rel="stylesheet">
     <!-- datatables styling -->
-    <link href="{{ url_for('static', filename='plugins/datatables-bs4/css/dataTables.bootstrap4.css') }}" rel="stylesheet"/>
-    <link href="{{ url_for('static', filename='plugins/datatables-buttons/css/buttons.bootstrap4.min.css') }}" rel="stylesheet">
-    <link href="{{ url_for('static', filename='plugins/datatables-responsive/css/responsive.bootstrap4.css') }}" rel="stylesheet">
+    <link href="{% static 'plugins/datatables-bs4/css/dataTables.bootstrap4.css' %}" rel="stylesheet"/>
+    <link href="{% static 'plugins/datatables-buttons/css/buttons.bootstrap4.min.css' %}" rel="stylesheet">
+    <link href="{% static 'plugins/datatables-responsive/css/responsive.bootstrap4.css' %}" rel="stylesheet">
     {% block css_block %}{% endblock %}
   </head>
   <body class="hold-transition sidebar-mini layout-fixed">
-    <script src="{{ url_for('static', filename='plugins/jquery/jquery.min.js') }}"></script>
+    <script src="{% static 'plugins/jquery/jquery.min.js' %}"></script>
     <div class="wrapper">
 
       <!-- Navbar -->
